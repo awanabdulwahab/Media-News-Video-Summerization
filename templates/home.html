@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block a %}
+
+{#------- Hero Portion with video -----------#}
+<section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Media News Video Summerization</h6>
+              <h2><em>In</em> Urdu Language</h2>
+              <div class="main-button">
+                  <div class="scroll-to-section"><a href="#">Discover more</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+{% endblock %}
